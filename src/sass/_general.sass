@@ -1,4 +1,3 @@
-
 .label
 	position: relative
 	z-index: 2
@@ -48,6 +47,8 @@ nav
 	position: fixed
 	width: 100%
 	z-index: 999
+	.burger
+		display: none
 
 .menu
 	display: flex
@@ -115,6 +116,10 @@ nav
 		color: #FFFFFF
 		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
 		@include btn_hover
+	.xs-visible
+		display: none
+	.xs-hidden
+		display: block
 
 .promo
 	background: url('../img/uber_bg.png') center (center / cover) no-repeat
@@ -171,7 +176,6 @@ nav
 	&_icon
 		width: 113px
 		height: 113px
-		align-self: center
 		background: $main-color
 		border-radius: 100%
 		display: flex
